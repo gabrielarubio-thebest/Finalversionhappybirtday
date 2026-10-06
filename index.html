@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>🪅 Boss Birthday Survival</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪅</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="rays" aria-hidden="true"></div>
+
+  <header class="hud">
+    <div class="logo">🪅 Boss Birthday <span>Survival</span></div>
+    <div class="progress" id="progress" aria-label="Level progress"></div>
+    <div class="toggles">
+      <button class="toggle" id="musicToggle" aria-pressed="true">🔊 Music</button>
+      <button class="toggle" id="sfxToggle" aria-pressed="true">🔔 SFX</button>
+    </div>
+  </header>
+
+  <main id="stage" aria-live="polite"></main>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <!-- Editable content first, then engine -->
+  <script src="js/messages.js"></script>
+  <script src="js/challenges.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
