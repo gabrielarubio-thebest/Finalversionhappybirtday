@@ -34,6 +34,9 @@ I hope this new trip around the sun brings you so many beautiful things, lots of
   { from: "Henry", text: `Happy happy birthday lau!! Have the best day and I hope Steven doesn’t give you too many tasks to celebrate 🥳 I know you’ll enjoy Edinburgh so my challenge is that you see at least one sunset and one sunrise from Calton Hill ! Best views in the city 🌆` },
   { from: "Sofi", text: `Mi Lau! Happy birthday✨🤍🌞 Hope you have a day as amazing as you are. Wishing you all the love, happiness and abundance.
 Keep spreading the joy you carry within you. Edinburgh is lucky to have you. Miss you everyday.` },
+  { from: "Carlos", text: `Hi Lauuu! Happy birthday to you!!! 🤩🥳
+
+On this very special day, I’d like to wish you every blessing and every success. I know you’re far away, but I want to celebrate your special day in such a way that we can all make you feel close to us. On a personal note, you’ve been a really good friend and colleague. I never would have thought that when I joined the Change bootcamp with Banco Agrario, we’d end up working together. I remember very well that you were the host of the first workshop I attended xD. I’m so glad that you’re in Edinburgh today, fulfilling one of your dreams; I sincerely hope that this is just the start of many more to come. We miss you (especially Eleine, or however you spell it)! Happy birthday :)` },
   { from: "Pedro", text: `Vaneeessa! (You might not know this, but she once told me she prefers Vanessa over Laura, haha fun fact).
 You’re like a Hogwarts student’s trunk... meaning you’re full of surprises! 😅✨ You have a great personality and such a kind nature. We all know you’re going to be super happy in Edinburgh, so enjoy it to the fullest—explore and discover that world (full of castles, just like in Harry Potter).
 Ah... and Happy birthday!! 🎉🎉🎉🥳🥳🥳` },
