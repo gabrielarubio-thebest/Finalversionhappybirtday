@@ -1,8 +1,9 @@
 /* =====================================================================
    🏴 EDINBURGH CHALLENGES — EDIT FREELY
    ---------------------------------------------------------------------
-   Each arena level unlocks one challenge (see `challenge:` index in
-   LEVELS inside messages.js). Add, remove or reword as you like.
+   Arena levels show a challenge when broken (see `challenge:` index in
+   LEVELS inside messages.js). The final screen lists ALL challenges.
+   Optional `from:` shows who proposed it. Add, remove or reword freely.
    ===================================================================== */
 const EDINBURGH_CHALLENGES = [
   {
@@ -46,5 +47,12 @@ const EDINBURGH_CHALLENGES = [
     title: "Souvenir Hunter",
     text: "Find the weirdest souvenir in Edinburgh. You don't have to buy it. (But you could.)",
     bonus: "If it's a knife, bring ID. 🪪",
+  },
+  {
+    icon: "🌅",
+    title: "Calton Hill: Sunset & Sunrise",
+    from: "Henry",
+    text: "See at least one sunset AND one sunrise from Calton Hill. Best views in the city. 🌆",
+    bonus: "Yes, the sunrise counts. Yes, that means waking up early.",
   },
 ];

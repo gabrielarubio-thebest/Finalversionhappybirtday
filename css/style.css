@@ -370,8 +370,17 @@ body.golden-mode .rays { opacity: 1; }
 .mission .check { margin-top: 12px; display: flex; gap: 8px; align-items: center; font-size: 14px; font-weight: 700; cursor: pointer; }
 .mission.done { opacity: .7; }
 .mission.done h4 { text-decoration: line-through; }
-.team-msgs { display: grid; gap: 10px; margin-top: 18px; text-align: left; }
-.team-msgs .bubble { max-width: 100%; color: var(--plum); }
+.team-msgs { columns: 2 320px; column-gap: 16px; margin-top: 24px; text-align: left; }
+.note {
+  break-inside: avoid; margin: 0 0 16px; background: var(--paper); color: var(--plum); border-radius: 18px;
+  padding: 18px 20px 20px; border-top: 8px solid var(--accent); transform: rotate(var(--tilt, 0deg)) translateY(24px);
+  opacity: 0; transition: opacity .6s, transform .6s cubic-bezier(.2, .9, .3, 1.2); box-shadow: 0 14px 30px rgba(0, 0, 0, .3);
+}
+.note.in { opacity: 1; transform: rotate(var(--tilt, 0deg)); }
+.note header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.note .av { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; background: var(--accent); color: #fff; font-weight: 800; font-size: 17px; }
+.note b { font-size: 18px; letter-spacing: -.01em; }
+.note p { margin: 0; font-size: 16px; line-height: 1.55; white-space: pre-line; }
 .lyrics h4 { margin: 16px 0 4px; color: var(--magenta); font-size: 14px; }
 .lyrics p { font-size: 17px; line-height: 1.5; }
 .now-playing {
@@ -418,3 +427,5 @@ body.golden-mode .rays { opacity: 1; }
 .cookie-hero.run svg { animation: none; transition: transform .7s cubic-bezier(.5, -0.4, .7, 1); transform: translate(140vw, -40px) rotate(720deg); }
 .bites-left { display: inline-flex; gap: 4px; margin-top: 6px; font-size: 22px; }
 .bites-left span.gone { opacity: .2; filter: grayscale(1); }
+
+.mission .from { display: inline-block; margin-top: 6px; background: var(--magenta); color: #fff; font-size: 12px; font-weight: 800; padding: 3px 10px; border-radius: 999px; transform: rotate(-2deg); }

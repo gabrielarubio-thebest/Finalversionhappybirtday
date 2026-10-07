@@ -18,6 +18,28 @@ const PERSON = {
 };
 
 /* ---------------------------------------------------------------------
+   2. TEAM MESSAGES (shown at the very end, after the Edinburgh missions)
+   Use backticks so line breaks are kept. Add or remove entries freely.
+   --------------------------------------------------------------------- */
+const TEAM_MESSAGES = [
+  { from: "Santi", text: `Lauuuu, happy birthday! I hope all your dreams and goals continue to come true, that you’re having a really lovely day, and that this new year brings you plenty of success and blessings. Sending you a big, rib-crushing hug.` },
+  { from: "Valen Zabala", text: `Heey Lau!
+Hope you’re having an amazing day! Keep shining and spreading your wings toward the brightest future.
+Wishing you the happiest birthday! Hope this new year brings you endless reasons to smile, grow, and celebrate` },
+  { from: "Valen Monar", text: `Heyy Lauu!
+Happy birthday!! I hope you’re having a really good day and enjoying it loads! I wish you a year full of fun, new adventures, and lots of happy moments.
+I hope everything you’ve been wishing for and working towards comes your way, and that this new chapter brings you lots of good things. You deserve all the happiness in the world and so much more!` },
+  { from: "Catalina", text: `Laurisss, happy birthday! 🥹 Thank you for being such an unconditional friend, for always being there for me, and for always listening. I miss you so much, and I really hope we can see each other again soon.
+I hope this new trip around the sun brings you so many beautiful things, lots of happiness, love, and wonderful moments. You deserve it all! ✨` },
+  { from: "Henry", text: `Happy happy birthday lau!! Have the best day and I hope Steven doesn’t give you too many tasks to celebrate 🥳 I know you’ll enjoy Edinburgh so my challenge is that you see at least one sunset and one sunrise from Calton Hill ! Best views in the city 🌆` },
+  { from: "Sofi", text: `Mi Lau! Happy birthday✨🤍🌞 Hope you have a day as amazing as you are. Wishing you all the love, happiness and abundance.
+Keep spreading the joy you carry within you. Edinburgh is lucky to have you. Miss you everyday.` },
+  { from: "Pedro", text: `Vaneeessa! (You might not know this, but she once told me she prefers Vanessa over Laura, haha fun fact).
+You’re like a Hogwarts student’s trunk... meaning you’re full of surprises! 😅✨ You have a great personality and such a kind nature. We all know you’re going to be super happy in Edinburgh, so enjoy it to the fullest—explore and discover that world (full of castles, just like in Harry Potter).
+Ah... and Happy birthday!! 🎉🎉🎉🥳🥳🥳` },
+];
+
+/* ---------------------------------------------------------------------
    3. OPENING SCENE
    --------------------------------------------------------------------- */
 const OPENING = {
@@ -221,6 +243,8 @@ const FINALE = {
   edinburgh: "Edinburgh is waiting.",
   missionsTitle: "🏴 EDINBURGH MISSIONS",
   missionsSub: "Unlocked by surviving your own birthday. Complete every mission, tick them off one by one, and make this trip legendary.",
+  messagesTitle: "💌 Messages from the team",
+  messagesSub: "A few words from the people who spent way too much time on this game.",
   replay: "Play again 🔁",
   lyricsButton: "🎤 Sing-along lyrics",
 };

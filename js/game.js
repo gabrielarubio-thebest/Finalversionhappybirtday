@@ -861,13 +861,13 @@
       { text: FINALE.edinburgh, cls: "mid gold-text", wait: 1100 },
     ]);
     sfx("challenge");
-    const ids = unlocked.size ? [...unlocked].sort((a, b) => a - b) : EDINBURGH_CHALLENGES.map((_, k) => k);
+    const ids = EDINBURGH_CHALLENGES.map((_, k) => k);
     const missions = h(`<div style="margin-top:44px">
       <p class="big">${t(FINALE.missionsTitle)}</p><p class="small" style="max-width:60ch;margin:10px auto 0">${t(FINALE.missionsSub)}</p>
       <div class="missions">${ids.map((k, n) => {
         const c = EDINBURGH_CHALLENGES[k];
         return `<article class="mission" style="--tilt:${rand(-1.6, 1.6).toFixed(2)}deg;animation-delay:${n * 0.12}s">
-          <span class="n">#${k + 1}</span><div class="i">${c.icon}</div><h4>${t(c.title)}</h4><p>${t(c.text)}</p>
+          <span class="n">#${k + 1}</span><div class="i">${c.icon}</div>${c.from ? `<span class="from">Challenge from ${esc(c.from)}</span>` : ""}<h4>${t(c.title)}</h4><p>${t(c.text)}</p>
           ${c.bonus ? `<p class="b">${t(c.bonus)}</p>` : ""}
           <label class="check"><input type="checkbox"> Mission done</label></article>`;
       }).join("")}</div></div>`);
@@ -877,6 +877,20 @@
       card.classList.toggle("done", cb.checked);
       if (cb.checked) { const r = card.getBoundingClientRect(); sfx("levelComplete"); confetti(r.left + r.width / 2, r.top + 30, 70, 11); }
     }));
+    if (typeof TEAM_MESSAGES !== "undefined" && TEAM_MESSAGES.length) {
+      const colors = ["#ff3d7f", "#ffb627", "#14c7b4", "#8a4dff"];
+      const msgs = h(`<div style="margin-top:56px"><p class="big">${t(FINALE.messagesTitle)}</p>
+        <p class="small" style="margin-top:10px">${t(FINALE.messagesSub)}</p>
+        <div class="team-msgs">${TEAM_MESSAGES.map((m, n) => `
+          <article class="note" style="--accent:${colors[n % colors.length]};--tilt:${rand(-1.2, 1.2).toFixed(2)}deg">
+            <header><span class="av">${esc([...m.from][0] || "?")}</span><b>${esc(m.from)}</b></header>
+            <p>${esc(fill(m.text))}</p></article>`).join("")}</div></div>`);
+      inner.append(msgs);
+      const io = new IntersectionObserver((entries) => entries.forEach((en) => {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      }), { root: f, threshold: 0.15 });
+      msgs.querySelectorAll(".note").forEach((n) => io.observe(n));
+    }
     const actions = h(`<div style="margin-top:36px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
       <button class="btn hot" id="lyr">${t(FINALE.lyricsButton)}</button><button class="btn ghost" id="again">${t(FINALE.replay)}</button></div>`);
     inner.append(actions);

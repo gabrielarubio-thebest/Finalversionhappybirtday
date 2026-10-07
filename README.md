@@ -10,6 +10,7 @@ Tip: `index.html?level=9` jumps straight to level 9 — handy for testing.
 | What | Where |
 |---|---|
 | Her name, role, nickname, team name | `js/messages.js` → `PERSON` |
+| Team messages at the end | `js/messages.js` → `TEAM_MESSAGES` |
 | Inside-joke levels (texts, punchlines) | `js/messages.js` → `STORY` |
 | Level order & difficulty | `js/messages.js` → `LEVELS` |
 | Hit words, fake-piñata lines, etc. | `js/messages.js` → `HIT_WORDS`, `FAKE_WORDS`, `HIDDEN_MISS` |
